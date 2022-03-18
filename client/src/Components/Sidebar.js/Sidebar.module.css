@@ -1,0 +1,68 @@
+.sidebar {
+  position: relative;
+  height: 100%;
+  width: 15%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+}
+
+.compose-container {
+  margin: 3rem 0;
+}
+
+.compose-container button {
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  border: none;
+  color: white;
+  background-color: #ffbf00;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.sidebar p {
+  margin: 0px;
+}
+
+.sidelinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar a {
+  padding: 0.2rem 2rem;
+  list-style: none;
+  margin: 1.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.logout {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.logout button {
+  font-size: 1.5rem;
+  border: none;
+  color: white;
+  background-color: #0a9b3a;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+}
+
+.active {
+  background-color: green;
+  color: white;
+}

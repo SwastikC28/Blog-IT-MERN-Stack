@@ -1,0 +1,85 @@
+.blog-parent {
+  height: 100%;
+  width: 70%;
+  margin-right: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-container {
+  height: 80%;
+  width: 100%;
+  background-color: #dfdfdf;
+  overflow: scroll;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.blog {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 2rem 0;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  border: 0.5px solid;
+}
+
+.content {
+  width: 70%;
+  background-color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.content h1 {
+  margin: 0px;
+}
+
+.content-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content-footer a {
+  margin: 0.5rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  border: 0px;
+  padding: 0.5rem 3rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.content-footer a:first-child {
+  background-color: rgb(236, 162, 25);
+  color: white;
+}
+
+.content-footer a:last-child {
+  background-color: #0a9b3a;
+  color: white;
+}
+
+.calender h1 {
+  margin: 0px;
+  text-align: center;
+}
+
+.calender p {
+  margin: 0rem;
+  text-align: center;
+}

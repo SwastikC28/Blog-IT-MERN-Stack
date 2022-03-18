@@ -1,0 +1,143 @@
+.profile-parent-container {
+  width: 70%;
+  background-color: #dfdfdf;
+  margin-right: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.profile-picture {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 3rem;
+  border-radius: 50%;
+  border: 2px solid;
+  font-size: 2rem;
+  background-color: #0a9b3a;
+  color: white;
+  margin: 1rem;
+}
+
+.edit-profile {
+  margin: 2rem 0;
+  height: 10%;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.edit-profile p {
+  font-size: 1.2rem;
+  margin-right: 4rem;
+  color: rgb(77, 77, 77);
+}
+
+.blog {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 2rem 0;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  border: 0.5px solid;
+}
+
+.content {
+  width: 70%;
+  background-color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.content h1 {
+  margin: 0px;
+}
+
+.content-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content-footer button {
+  margin: 0.5rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  border: 0px;
+  padding: 0.5rem 3rem;
+  cursor: pointer;
+}
+
+.content-footer button:first-child {
+  background-color: rgb(236, 162, 25);
+  color: white;
+}
+
+.content-footer button:last-child {
+  background-color: #0a9b3a;
+  color: white;
+}
+
+.calender h1 {
+  margin: 0px;
+  text-align: center;
+}
+
+.calender p {
+  margin: 0rem;
+  text-align: center;
+}
+
+.blog-info {
+  height: 25%;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  color: rgb(77, 77, 77);
+}
+
+.blog-info h1,
+p {
+  margin: 0px;
+}
+
+.blog-info div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-info div h1 {
+  font-size: 4rem;
+}
+
+.timeline {
+  width: 95%;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.timeline h1 {
+  margin: 0rem;
+  font-size: 1.5rem;
+}
