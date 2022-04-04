@@ -28,7 +28,8 @@ npm start
 - License: MIT
 
 
-# How to **contribute**?
+# Welcome To OpenCode
+## How to **contribute**?
 
 _If you're not comfortable with command line, [here are tutorials using GUI tools.](#tutorials-using-other-tools)_
 _If you don't have git on your machine, [install it](https://help.github.com/articles/set-up-git/)._
@@ -52,7 +53,7 @@ cd Blog-IT-MERN-Stack-OpenCode
 **4.** Add a reference(remote) to the original repository.
 
 ```
-git remote add upstream https://github.com/siddhi-244/Embellish
+git remote add upstream https://github.com/SwastikC28/Blog-IT-MERN-Stack-OpenCode
 ```
 
 **5.** Check the remotes for this repository.
