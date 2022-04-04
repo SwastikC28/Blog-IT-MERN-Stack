@@ -36,7 +36,7 @@ _If you don't have git on your machine, [install it](https://help.github.com/art
 
 <img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/fork.png" alt="fork this repository" />
 
-**1.**  Fork [this](https://github.com/siddhi-244/Embellish.git) repository.
+**1.**  Fork [this](https://github.com/SwastikC28/Blog-IT-MERN-Stack-OpenCode) repository.
 
 **2.**  Clone your forked copy of the project.
 
