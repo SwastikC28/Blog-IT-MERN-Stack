@@ -1,6 +1,7 @@
 # Blog-IT-MERN-Stack-OpenCode
 
 Full Stack Blogging Platform where users can blog in a safe space.
+Made Using MERN Stack.
 
 ## Usage
 
