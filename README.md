@@ -1,4 +1,4 @@
-# Blog-IT-MERN-Stack
+# Blog-IT-MERN-Stack-OpenCode
 
 Full Stack Blogging Platform where users can blog in a safe space.
 
@@ -46,7 +46,7 @@ git clone  https://github.com/<your_name>/Embellish.git
 **3.** Navigate to the project directory :file_folder: .
 
 ```
-cd Embellish
+cd Blog-IT-MERN-Stack-OpenCode
 ```
 
 **4.** Add a reference(remote) to the original repository.
