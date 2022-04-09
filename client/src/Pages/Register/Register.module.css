@@ -78,6 +78,12 @@
   cursor: pointer;
 }
 
+.login-container button:disabled {
+  background-color: rgba(0, 0, 0, 0.12);
+  color: rgba(0, 0, 0, 0.26);
+  cursor: default;
+}
+
 h4 {
   color: white;
 }
