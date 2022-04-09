@@ -37,8 +37,8 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [passwordTouched, setPasswordTouch] = useState("false");
   const [error, setFormError] = useState({
-    emailError: true,
-    passwordError: true,
+    emailError: false,
+    passwordError: false,
   });
 
   const [isLoading, setIsLoading] = useState(false);
@@ -49,14 +49,17 @@ const Login = () => {
     if (e.target.value.includes("@")) {
       setFormError({ ...error, emailError: false });
     }
+    else {
+      setFormError({ ...error, emailError: true });
+    }
   };
 
   const passwordOnChangeHandler = (e) => {
     setPassword(e.target.value);
-    if (e.target.value.length > 6) {
-      setFormError({ ...error, passwordError: false });
-    } else {
+    if (e.target.value.length < 8) {
       setFormError({ ...error, passwordError: true });
+    } else {
+      setFormError({ ...error, passwordError: false });
     }
   };
 
@@ -139,7 +142,7 @@ const Login = () => {
           value={email}
           onChange={emailOnChangeHandler}
           onBlur={emailBlurHandler}
-          error={emailTouched && error.emailError ? false : true}
+          error={emailTouched && !error.emailError ? false : true}
         />
         <TextField
           id="password"
@@ -150,10 +153,10 @@ const Login = () => {
           value={password}
           onChange={passwordOnChangeHandler}
           onBlur={passwordBlurHandler}
-          error={passwordTouched && error.passwordError ? false : true}
+          error={passwordTouched && !error.passwordError ? false : true}
         />
 
-        <Button variant="contained" margin="dense" type="submit">
+        <Button variant="contained" margin="dense" type="submit" disabled={email && password && !error.emailError && !error.passwordError ? false : true}>
           LOGIN
         </Button>
 
