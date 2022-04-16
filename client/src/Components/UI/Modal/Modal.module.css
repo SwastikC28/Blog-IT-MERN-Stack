@@ -46,6 +46,11 @@
   cursor: pointer;
 }
 
+.submit-blog button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
 /* Hello */
 
 .backdrop {
@@ -122,4 +127,10 @@
     left: calc(50% - 20rem);
     width: 40rem;
   }
+}
+
+.error {
+  color: red;
+  font-size: 1rem;
+  font-weight: bold;
 }

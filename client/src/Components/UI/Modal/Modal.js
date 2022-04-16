@@ -10,6 +10,10 @@ const Modal = (props) => {
   const dispatch = useDispatch();
 
   const [blogContent, setBlogContent] = useState({ title: "", content: "" });
+  const [focus, setFocus] = useState({
+    title: false,
+    content: false,
+  });
 
   const closeModalHandler = () => {
     dispatch(modalActions.closeModal());
@@ -66,7 +70,12 @@ const Modal = (props) => {
                 id="title"
                 value={blogContent.title}
                 onChange={titleChangeHandler}
+                onFocus={() => setFocus({ ...focus, title: true })}
+                onBlur={() => setFocus({ ...focus, title: false })}
               />
+              {!blogContent.title && focus.title && (
+                <p className={classes.error}>*Title should not be empty</p>
+              )}
             </div>
             <div className={classes["input-group"]}>
               <label htmlFor="content">Content</label>
@@ -75,13 +84,18 @@ const Modal = (props) => {
                 className={classes.content}
                 value={blogContent.content}
                 onChange={contentChangeHandler}
+                onFocus={() => setFocus({ ...focus, content: true })}
+                onBlur={() => setFocus({ ...focus, content: false })}
               />
+              {!blogContent.content && focus.content && (
+                <p className={classes.error}>*Content should not be empty</p>
+              )}
             </div>
           </div>
 
           <footer className={classes.actions}>
             <div className={classes["submit-blog"]}>
-              <button type="submit">BLOG</button>
+              <button type="submit" disabled={blogContent.title && blogContent.content ? false : true}>BLOG</button>
             </div>
           </footer>
         </form>
