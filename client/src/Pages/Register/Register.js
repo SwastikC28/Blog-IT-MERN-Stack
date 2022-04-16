@@ -22,6 +22,12 @@ const Register = () => {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [focus, setFocus] = useState({
+    firstName: false,
+    lastName: false,
+    email: false,
+    password: false,
+  });
 
   const onEmailChangeHandler = (e) => {
     setEmail(e.target.value);
@@ -89,8 +95,13 @@ const Register = () => {
               id="FirstName"
               autoComplete="off"
               onChange={onFirstNameChangeHandler}
+              onFocus={() => setFocus({ ...focus, firstName: true })}
+              onBlur={() => setFocus({ ...focus, firstName: false })}
               value={firstName}
             />
+            {!firstName && focus.firstName && (
+              <p className={classes.error}>*First Name should not be empty</p>
+            )}
           </div>
 
           <div className={classes["input-container"]}>
@@ -101,8 +112,13 @@ const Register = () => {
               id="LastName"
               autoComplete="off"
               onChange={onLastNameChangeHandler}
+              onFocus={() => setFocus({ ...focus, lastName: true })}
+              onBlur={() => setFocus({ ...focus, lastName: false })}
               value={lastName}
             />
+            {!lastName && focus.lastName && (
+              <p className={classes.error}>*Last Name should not be empty</p>
+            )}
           </div>
         </div>
         <div className={classes["input-container"]}>
@@ -114,7 +130,12 @@ const Register = () => {
             autoComplete="off"
             value={email}
             onChange={onEmailChangeHandler}
+            onFocus={() => setFocus({ ...focus, email: true })}
+            onBlur={() => setFocus({ ...focus, email: false })}
           />
+          {!email.includes("@") && focus.email && (
+            <p className={classes.error}>*Please enter a valid email</p>
+          )}
         </div>
 
         <div className={classes["input-container"]}>
@@ -125,10 +146,26 @@ const Register = () => {
             id="password"
             value={password}
             onChange={onPasswordChangeHandler}
+            onFocus={() => setFocus({ ...focus, password: true })}
+            onBlur={() => setFocus({ ...focus, password: false })}
           />
+          {password.length < 8 && focus.password && (
+            <p className={classes.error}>
+              *Password must be more than 7 characters
+            </p>
+          )}
         </div>
 
-        <button type="submit">REGISTER</button>
+        <button
+          type="submit"
+          disabled={
+            firstName && lastName && email.includes("@") && password.length > 7
+              ? false
+              : true
+          }
+        >
+          REGISTER
+        </button>
       </form>
 
       <p className={classes["redirection-text"]}>
