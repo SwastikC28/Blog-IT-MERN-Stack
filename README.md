@@ -1,4 +1,4 @@
-# Blog-IT-MERN-Stack-OpenCode
+# Blog-IT-MERN-Stack
 
 Full Stack Blogging Platform where users can blog in a safe space.
 Made Using MERN Stack.
@@ -42,7 +42,7 @@ _If you don't have git on your machine, [install it](https://help.github.com/art
 **2.**  Clone your forked copy of the project.
 
 ```
-git clone  https://github.com/<your_name>/Embellish.git
+git clone  https://github.com/<your_name>/SwastikC28.git
 ```
 
 **3.** Navigate to the project directory :file_folder: .
@@ -110,6 +110,4 @@ git push -u origin <your_branch_name>
 
 <hr>
 
-<h1 align=center> Project Maintainer & Admin </h1>
-<p align="center"> 
-<p align="center"> Swastik Chaudhary </p>
+
